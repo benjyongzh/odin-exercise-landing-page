@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
 * {
+    /*
     border: 1px solid black;
-    font-family: Roboto;
+    */
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -32,6 +36,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
 }
 
 .header-logo {
@@ -70,13 +75,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
 }
 
 #hero-title {
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: bold;
     color: #F9FAF8;
+    margin-bottom:-10px;
+}
+
+#hero-subtitle,
+#hero-signup-button {
+    margin-top: 10px;
 }
 
 .header-links li a,
@@ -85,7 +95,7 @@ body {
     color: #E5E7EB;
 }
 
-#hero-signup-button {
+button {
     background-color: #3882F6;
     padding: 0.4em 1.2em;
     display: flex;
@@ -94,12 +104,14 @@ body {
     color: #E5E7EB;
     font-weight: bold;
     border-radius: 5px;
+    border: 0px solid white;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 60px;
 }
 
 .content-title {
@@ -107,7 +119,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 36px;
-    font-weight: extra-bold;
+    font-weight: bold;
     color:#1F2937;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -141,10 +153,51 @@ body {
 
 .quote-section {
     background-color: #E5E7EB;
+    padding: 1em 15em;
+}
+
+#quote-text {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+#quote-author {
+    text-align: right;
+}
+
+#quote-text,
+#quote-author {
+    color: #1F2937;
 }
 
 .sale-section {
     background-color: #3882F6;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 2em 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    color: #E5E7EB;
+    border-radius: 7px;
+}
+
+.sale-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3px;
+}
+
+.sale-text-title {
+    font-weight: bold;
+}
+
+#sale-signup-button {
+    border: 2px solid #F9FAF8;
 }
 
 .footer {
@@ -152,4 +205,5 @@ body {
     justify-content: center;
     align-items: center;
     height: 72px;
+    color:#E5E7EB;
 }
