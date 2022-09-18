@@ -1,0 +1,155 @@
+* {
+    border: 1px solid black;
+    font-family: Roboto;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.header,
+.footer {
+    background-color: #1F2937;
+}
+
+.header {
+    display:flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.header-nav,
+.hero,
+.content,
+.sale-section {
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    gap: 1em;
+    list-style-type: none;
+}
+
+.header-links li a {
+    text-decoration: none;
+}
+
+.hero {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero-info,
+#hero-image {
+    flex: 1;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#hero-title {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+}
+
+.header-links li a,
+#hero-subtitle {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+#hero-signup-button {
+    background-color: #3882F6;
+    padding: 0.4em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E5E7EB;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: extra-bold;
+    color:#1F2937;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.content-image {
+    border: #3882F6;
+    border-radius: 8px;
+}
+
+.content-section-desc {
+    text-align: center;
+    color: #1F2937;
+}
+
+
+.quote-section {
+    background-color: #E5E7EB;
+}
+
+.sale-section {
+    background-color: #3882F6;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+}
